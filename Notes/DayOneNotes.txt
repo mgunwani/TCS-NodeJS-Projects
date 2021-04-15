@@ -1,0 +1,54 @@
+
+NodeJS Introduciton:
+
+To check nodejs installed or not:
+
+	node --version
+
+To check npm installed or not:
+	
+	npm --version
+	
+--------------------------------------------------------
+
+NodeJS: Server Side JavaScript Framework
+
+	- NodeJS works with Asynchronous Approach.
+	- Helps in providing runtime environment to JavaScript.
+	- Helps you to communicate with file system.
+	- Helps you to communicate with database.
+	- Helps you to communicate with RestFul API.
+	- Helps you to communicate with Network.
+	
+NPM (Node Package Manager):
+
+	npm install bootstrap
+	npm update bootstrap
+	npm uninstall bootstrap
+	
+	npm install bootstrap --global
+	
+-------------------------------------------------------
+
+	Multi-Threading Application: (Blocking Application)
+	
+	Asynchronous Approach: (StarBucks/PizzHut/MacD) - Non-Blocking Code
+	
+	Synchronous Approach (Blocking Approach) - Multi-Threading 
+
+-------------------------------------------------------
+
+NodeJS: Three Types of Modules(Packages)
+
+	- Built-In Packages (Core Packages)
+		fs module
+		http module
+	- User-Defined Packages
+	- Third-Party Packages
+
+-------------------------------------------------------
+
+
+
+
+
