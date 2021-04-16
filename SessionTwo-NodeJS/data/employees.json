@@ -1,0 +1,26 @@
+[
+    {
+        "_id": 1001,
+        "name": "King Kochhar",
+        "salary": 12000,
+        "email": "king.kochhar@gmail.com"
+    },
+    {
+        "_id": 1002,
+        "name": "John Smith",
+        "salary": 22000,
+        "email": "john.smith@gmail.com"
+    },
+    {
+        "_id": 1003,
+        "name": "Sarah Bowling",
+        "salary": 40000,
+        "email": "sarah.bowling@gmail.com"
+    },
+    {
+        "_id": 1004,
+        "name": "James Bond",
+        "salary": 62000,
+        "email": "james.bond@gmail.com"
+    }
+]
