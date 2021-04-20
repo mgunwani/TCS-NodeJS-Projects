@@ -1,0 +1,136 @@
+
+MongoDB: A No-SQL Database
+
+Open Two Cmd prompt windows: 1 for server and 2 for client
+
+1. Start MongoDB Server:
+
+	mongod
+	
+	Default Port: 27017
+	Default Database Path: c:/data/db
+	
+------------------------------------------------
+
+2. Start MongoDB Client:
+
+	> mongo
+	
+	Default Port: 27017
+	Default Database Path: c:/data/db
+
+------------------------------------------------
+
+3. MongDB Commands:
+
+-- To list the databases:
+
+	> show dbs
+	
+-- To create new database or use existing database:
+
+	> use tcsdb;
+	
+-- To create a new collection(table) in tcsdb:
+
+	> db.createCollection("users");
+	
+-- To list the collections in used database:
+
+	> show collections
+	
+-- To insert a document inside users collections:
+
+	> db.users.insert({"name": "King Kochhar", "age": 23});
+	> db.users.insert({"name": "Shreya Singhal", "age": 30});
+	> db.users.insert({"name": "James Bond", "age": 66});
+	> db.users.insert({"name": "Ruskin Bond", "age": 45});
+	> db.users.insert({"name": "Roger Lee", "age": 56});
+
+-- To see the list of documents in users collection:
+	
+	> db.users.find();
+	
+-- To see the list of documents using criteria:
+
+	> db.users.find({ "name": "King Kochhar" });
+	
+	> db.users.find({ "age" : { $eq: 30 } });
+	> db.users.find({ "age" : { $ne: 30 } });
+	> db.users.find({ "age" : { $gt: 30 } });
+	> db.users.find({ "age" : { $gte: 30 } });
+	> db.users.find({ "age" : { $lt: 30 } });
+	> db.users.find({ "age" : { $lte: 30 } });
+	
+	db.users.find({ "age" : { $in: [30, 45, 60]} });
+	db.users.find({ "age" : { $nin: [30, 45, 60]} });
+	
+	db.users.find({ 
+		 $and: [{"name": "Shreya Singhal"}, {"age": 30}]
+	});
+	
+	db.users.find({ 
+		 $or: [{"name": "King Kochhar"}, {"age": 30}]
+	});
+
+
+	db.users.find({ "name": { $not: /^R.*/ } });
+		
+---------------------------------------------------------------------
+
+-- Update a Single Document:
+
+	db.users.updateOne(
+		{ "name": "King Kochhar" },
+		{ $set: {"age": 78 } }
+	)
+	
+-- Update Multiple Documents:
+	
+	db.users.updateMany(
+		{ "age" : { $gt: 50} },
+		{ $set: { "age": 40, "status": "Passive" } }
+	)
+	
+--------------------------------------------------------------------
+
+-- Delete a Single Document:
+
+	db.users.deleteOne({ "status": "Passive" })
+	
+-- Delete Many Documents:
+	
+	db.users.deleteMany({ "status": "Passive" })
+
+---------------------------------------------------------------------
+
+	db.createCollection("employees");
+	
+	> db.employees.insert({ "_id": 1001, "name": "King Kochhar", "age": 23});
+	> db.employees.insert({ "_id": 1002, "name": "Shreya Singhal", "age": 30});
+	> db.employees.insert({ "_id": 1003, "name": "James Bond", "age": 66});
+	> db.employees.insert({ "_id": 1004, "name": "Ruskin Bond", "age": 45});
+	> db.employees.insert({ "name": "Roger Lee", "age": 56});
+	
+	db.employees.find();
+	
+--------------------------------------------------------------------------
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

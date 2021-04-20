@@ -1,0 +1,33 @@
+
+Asynchronous Approach in NodeJS:
+
+By Default, NodeJS works with Asynchronous Approach.
+
+There are three ways to work with async approach:
+
+	1. Callback
+	2. Promises
+	3. Async/Await
+	
+----------------------------------------------------
+
+Callback Hell:
+
+	doSomething1() {
+		doSomething2() {
+			doSomething3() {
+				doSomething4() {
+					// Some Code Here
+				}
+			}
+		}
+	}
+
+-----------------------------------------------------
+
+Promise: Resolve, Reject
+
+-----------------------------------------------------
+
+async/await internally uses promises.
+But it is an alternative syntax of promises.
