@@ -1,0 +1,19 @@
+<br /><br />
+<a routerLink='/user-add' class="btn btn-success">Add New User</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userList">
+            <td>{{user._id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.city}}</td>
+        </tr>
+    </tbody>
+</table>
