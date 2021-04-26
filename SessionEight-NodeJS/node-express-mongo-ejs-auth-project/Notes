@@ -1,0 +1,11 @@
+npm install express ejs cookie-session mongoose passport passport-local passport-local-mongoose
+
+---------------------------------------------
+
+passport, mongoose, passport-local-mongoose:
+
+passport-local-mongoose: 
+a mongoose plugin that helps in securing the user credentials at the time of POST request.
+
+
+
